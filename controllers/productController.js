@@ -76,7 +76,7 @@ export const getProductController = async (req, res) => {
         .limit(12)
         .sort({ createdAt: -1 });
       res.status(200).send({
-        success: true,
+        success: true, 
         countTotal: products.length,
         message: "ALlProducts ",
         products,
